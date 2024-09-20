@@ -7,7 +7,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   // ` back end url
-  const url = "https://food-delivery-backend-dpw6.onrender.com/";
+  const url = "https://food-delivery-backend-dpw6.onrender.com";
   // ` store token
   const [token, setToken] = useState("");
   // `cart item state
