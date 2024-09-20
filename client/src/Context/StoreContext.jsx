@@ -141,31 +141,3 @@ const StoreContextProvider = (props) => {
 };
 
 export default StoreContextProvider;
-
-// ! add this in documentation
-
-// : In the context of the getTotalCartAmount function, item represents the key in the cartItems object. Typically, this key is the product ID, which uniquely identifies each item in the cart.
-
-// Example Context:
-// javascript
-// Copy code
-// const cartItems = {
-//   "1": 2, // Product ID "1" with quantity 2
-//   "2": 1  // Product ID "2" with quantity 1
-// };
-// Explanation:
-// item in the loop:
-// javascript
-// Copy code
-// for (const item in cartItems) {
-// The for...in loop iterates over the keys in the cartItems object. In this example, item will first be "1" and then "2" on the next iteration.
-// cartItems[item]:
-// javascript
-// Copy code
-// if (cartItems[item] > 0) {
-// cartItems[item] accesses the value associated with the key item in the cartItems object.
-// For item = "1", cartItems[item] would be 2, which is the quantity of the product with ID "1" in the cart.
-// For item = "2", cartItems[item] would be 1, which is the quantity of the product with ID "2" in the cart.
-// Summary:
-// The item represents the product ID in the cartItems object.
-// cartItems[item] retrieves the quantity of that product in the cart.
